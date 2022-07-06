@@ -1,0 +1,1946 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://o4dh.com/Ontologies/Crisis.owl#"
+     xml:base="http://o4dh.com/Ontologies/Crisis.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:gg="http://o4dh.com/Ontologies/Crisis.owl/"
+     xmlns:ont="http://www.semanticweb.org/croche/ontologies/2021/2/untitled-ontology-31#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sem="http://semanticweb.cs.vu.nl/2009/11/sem/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:Crisis="http://o4dh.com/Ontologies/Crisis.owl#">
+    <owl:Ontology rdf:about="http://o4dh.com/Ontologies/Crisis.owl">
+        <rdfs:comment>RDF CIDOC Vocabulary
+http://erlangen-crm.org/200717/</rdfs:comment>
+        <rdfs:comment xml:lang="en">Updated on 02-05-2022, 04-06-2022, 24-06-2022, 06-07-2022</rdfs:comment>
+        <rdfs:label xml:lang="en">Crisis Ontology V2</rdfs:label>
+        <rdfs:seeAlso>http://remacle.org/bloodwolf/historiens/xenophon/histoire2.htm</rdfs:seeAlso>
+        <rdfs:seeAlso>https://cidoc-crm.org/Version/version-7.2.1</rdfs:seeAlso>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Perseus_reference -->
+
+    <owl:AnnotationProperty rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Perseus_reference"/>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#reference -->
+
+    <owl:AnnotationProperty rdf:about="http://o4dh.com/Ontologies/Crisis.owl#reference"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#subPropertyOf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#subclassOf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#subclassOf"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/birthday -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/birthday"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/depiction -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depiction"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agent -->
+
+    <owl:ObjectProperty rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agent">
+        <rdfs:domain rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+        <rdfs:range rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Agent"/>
+        <rdfs:subPropertyOf>http://erlangen-crm.org/200717/P14_carried_out_by</rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#cause -->
+
+    <owl:ObjectProperty rdf:about="http://o4dh.com/Ontologies/Crisis.owl#cause">
+        <rdfs:domain rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+        <rdfs:range rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#consequence -->
+
+    <owl:ObjectProperty rdf:about="http://o4dh.com/Ontologies/Crisis.owl#consequence">
+        <rdfs:domain rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+        <rdfs:range rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#designation -->
+
+    <owl:ObjectProperty rdf:about="http://o4dh.com/Ontologies/Crisis.owl#designation">
+        <rdfs:domain rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Lexical_Unit"/>
+        <rdfs:range rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#endsBeforeTheStartOf -->
+
+    <owl:ObjectProperty rdf:about="http://o4dh.com/Ontologies/Crisis.owl#endsBeforeTheStartOf">
+        <rdfs:domain rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+        <rdfs:range rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+        <rdfs:subPropertyOf>http://erlangen-crm.org/200717/P183_ends_before_the_start_of</rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#function -->
+
+    <owl:ObjectProperty rdf:about="http://o4dh.com/Ontologies/Crisis.owl#function">
+        <rdfs:domain rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Performed_Function"/>
+        <rdfs:range rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Function"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#linked_event -->
+
+    <owl:ObjectProperty rdf:about="http://o4dh.com/Ontologies/Crisis.owl#linked_event">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+        <rdfs:range rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#location -->
+
+    <owl:ObjectProperty rdf:about="http://o4dh.com/Ontologies/Crisis.owl#location">
+        <rdfs:domain rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+        <rdfs:range rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Location"/>
+        <rdfs:subPropertyOf>http://erlangen-crm.org/200717/P7_took_place_at</rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#member -->
+
+    <owl:ObjectProperty rdf:about="http://o4dh.com/Ontologies/Crisis.owl#member">
+        <rdfs:domain rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person"/>
+        <rdfs:range rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#startsBeforeTheEndOf -->
+
+    <owl:ObjectProperty rdf:about="http://o4dh.com/Ontologies/Crisis.owl#startsBeforeTheEndOf">
+        <rdfs:domain rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+        <rdfs:range rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+        <rdfs:subPropertyOf>P174_starts_before_the_end_of</rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#startsBeforeTheStartOf -->
+
+    <owl:ObjectProperty rdf:about="http://o4dh.com/Ontologies/Crisis.owl#startsBeforeTheStartOf">
+        <rdfs:domain rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+        <rdfs:range rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+        <rdfs:subPropertyOf>http://erlangen-crm.org/200717/P176_starts_before_the_start_of</rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#subEvent -->
+
+    <owl:ObjectProperty rdf:about="http://o4dh.com/Ontologies/Crisis.owl#subEvent">
+        <rdfs:domain rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+        <rdfs:range rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#beginDate -->
+
+    <owl:DatatypeProperty rdf:about="http://o4dh.com/Ontologies/Crisis.owl#beginDate">
+        <rdfs:domain rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#endDate -->
+
+    <owl:DatatypeProperty rdf:about="http://o4dh.com/Ontologies/Crisis.owl#endDate">
+        <rdfs:domain rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#language -->
+
+    <owl:DatatypeProperty rdf:about="http://o4dh.com/Ontologies/Crisis.owl#language">
+        <rdfs:domain rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Lexical_Unit"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#pleiadesCoordinates -->
+
+    <owl:DatatypeProperty rdf:about="http://o4dh.com/Ontologies/Crisis.owl#pleiadesCoordinates">
+        <rdfs:domain rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Location"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#reference -->
+
+    <owl:DatatypeProperty rdf:about="http://o4dh.com/Ontologies/Crisis.owl#reference"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Administrative_Function -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Administrative_Function">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Association -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Association">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Athletic_Association -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Athletic_Association">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Association"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Battle -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Battle">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Military_Crisis"/>
+        <skos:prefLabel xml:lang="en">battle</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">μάχη</skos:prefLabel>
+        <skos:prefLabel xml:lang="grc">μάχη</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Civil_war -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Civil_war">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Political_Crisis"/>
+        <rdfs:label xml:lang="en">civil war</rdfs:label>
+        <rdfs:label xml:lang="el">εμφύλιος πόλεμος</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Conspiracy -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Conspiracy">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Political_Crisis"/>
+        <rdfs:label xml:lang="en">conspiracy</rdfs:label>
+        <rdfs:label xml:lang="el">συνομωσία</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Crisis -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Crisis">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+        <rdfs:label xml:lang="en">crisis</rdfs:label>
+        <rdfs:label xml:lang="el">κρίση</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Defection -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Defection">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Political_Crisis"/>
+        <skos:prefLabel xml:lang="en">defection</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">αποστασία</skos:prefLabel>
+        <skos:prefLabel xml:lang="grc">ἀπόστασις
+LSJ http://www.perseus.tufts.edu/hopper/morph?l=a%29posta%2Fsewn&amp;la=greek&amp;can=a%29posta%2Fsewn0&amp;prior=tw=n&amp;d=Perseus:text:1999.01.0199:book=1:chapter=99:section=1&amp;i=1#Perseus:text:1999.04.0057:entry=a)po/stasis-contents</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Definite_Description -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Definite_Description">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Lexical_Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Demonstration -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Demonstration">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Political_Crisis"/>
+        <rdfs:label xml:lang="en">demonstration</rdfs:label>
+        <rdfs:label xml:lang="el">διαδήλωση</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Drought -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Drought">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Environmental_Crisis"/>
+        <rdfs:comment xml:lang="el">ξηρασία</rdfs:comment>
+        <rdfs:label xml:lang="en">drought</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Earthquake -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Earthquake">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Environmental_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#End_of_Alliance -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#End_of_Alliance">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Political_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Environmental_Crisis -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Environmental_Crisis">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Epidemic -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Epidemic">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Public_Health_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Ethnic_Group -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Ethnic_Group">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Famine -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Famine">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Migration_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Festivals -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Festivals">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Financial_Crisis -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Financial_Crisis">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Financial_Mismanagement -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Financial_Mismanagement">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Financial_Crisis"/>
+        <rdfs:label xml:lang="en">Financial Mismanagement</rdfs:label>
+        <skos:definition xml:lang="en">Financial mismanagement is management that, deliberately or not, is handled in a way that can be characterized as &quot;wrong, bad, careless, inefficient or incompetent&quot; and that will reflect negatively upon the financial standing of a business or individual.[1]
+ &quot;Cambridge Dictionary&quot;. Retrieved 20 October 2014.
+https://en.wikipedia.org/wiki/Financial_mismanagement</skos:definition>
+        <skos:prefLabel xml:lang="en">Financial Mismanagement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Insurrection -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Insurrection">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Military_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Inundation -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Inundation">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Environmental_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Invasion -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Invasion">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Military_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit"/>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Agent -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Agent">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit"/>
+        <owl:disjointWith rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+        <owl:disjointWith rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Location"/>
+        <rdfs:subclassOf>http://erlangen-crm.org/200717/E39_Actor</rdfs:subclassOf>
+        <skos:exactMatch>foaf:Agent</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agent"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#cause"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#consequence"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#subEvent"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#location"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Location"/>
+        <rdfs:subclassOf>https://cidoc-crm.org/Entity/e7-activity/version-6.2</rdfs:subclassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Function -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Function">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Group -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Group">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Human_Agent"/>
+        <rdfs:subclassOf>https://cidoc-crm.org/Entity/e74-group/version-6.0</rdfs:subclassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Human_Agent -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Human_Agent">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Location -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Location">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit"/>
+        <rdfs:subclassOf>https://cidoc-crm.org/Entity/e53-place/version-6.2.1</rdfs:subclassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Natural_Agent -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Natural_Agent">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Human_Agent"/>
+        <rdfs:subclassOf>https://cidoc-crm.org/Entity/e21-person/version-6.0</rdfs:subclassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Land_Battle -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Land_Battle">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Battle"/>
+        <owl:disjointWith rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Naval_Battle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Lexical_Unit -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Lexical_Unit"/>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Migration_Crisis -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Migration_Crisis">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Military_Crisis -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Military_Crisis">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Military_Function -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Military_Function">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Monetary_Crisis -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Monetary_Crisis">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Financial_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Naval_Battle -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Naval_Battle">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Battle"/>
+        <skos:prefLabel xml:lang="en">naval battle</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">ναυμαχία</skos:prefLabel>
+        <skos:prefLabel xml:lang="grc">ναυμαχία</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Olympic_Games -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Olympic_Games">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Sport_Festival"/>
+        <rdfs:label xml:lang="en">Olympic Games</rdfs:label>
+        <rdfs:label xml:lang="el">Ολυμπιακοί Αγώνες</rdfs:label>
+        <skos:altLabel xml:lang="en">Olympics</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Olympic Games</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Ostracism -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Ostracism">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Political_Crisis"/>
+        <rdfs:label xml:lang="en">exile</rdfs:label>
+        <rdfs:label xml:lang="en">ostracism</rdfs:label>
+        <rdfs:label xml:lang="el">εξορία</rdfs:label>
+        <rdfs:label xml:lang="el">οστρακισμός</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Panathenaic_Festival -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Panathenaic_Festival">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Religious_Festival"/>
+        <rdfs:label xml:lang="en">Panathenaic Festival</rdfs:label>
+        <skos:altLabel xml:lang="el"></skos:altLabel>
+        <skos:altLabel xml:lang="en">Panathenaia Festival</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Panathenaic Festival</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">Μεγάλα Παναθήναια</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Pandemic -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Pandemic">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Military_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Performed_Function -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Performed_Function">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Pillage -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Pillage">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Military_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Piratical_attack -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Piratical_attack">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Military_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Political_Association -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Political_Association">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Association"/>
+        <rdfs:label xml:lang="en">League</rdfs:label>
+        <rdfs:label xml:lang="en">Political Association</rdfs:label>
+        <skos:altLabel xml:lang="en">Commonwealth</skos:altLabel>
+        <skos:altLabel xml:lang="el">Koinon</skos:altLabel>
+        <skos:altLabel xml:lang="en">League</skos:altLabel>
+        <skos:definition xml:lang="el"></skos:definition>
+        <skos:definition xml:lang="en"></skos:definition>
+        <skos:definition xml:lang="en">An association of states, organizations, or individuals for common action; an alliance. Wordnik
+https://www.wordnik.com/words/league</skos:definition>
+        <skos:note xml:lang="en">Koinon, meaning &quot;common&quot;, in the sense of &quot;public&quot;, had many interpretations, some societal, some governmental. The word was the neuter form of the adjective, roughly equivalent in the governmental sense to Latin res publica, &quot;the public thing&quot;. Among the most frequent uses is &quot;commonwealth&quot;, the government of a single state, such as the Athenian. Frequent in the historical writings is a sense of &quot;league&quot; or &quot;federation&quot; an association of distinct city-states in a sympoliteia. As government of a league, koinon comprised such functions as defense, diplomacy, economics, and religious practices among its member states. The word was carried over to other political associations in mediaeval and modern Greek history. In Epirus itself there had in ancient times existed the Koinon of the Molossians. There was a Lacedaemonian League, centred on Sparta and its old dominions for a period under Roman rule, a Koinon of the Macedonians, also under Roman rule.Wikipedia
+https://en.wikipedia.org/wiki/Koinon</skos:note>
+        <skos:prefLabel xml:lang="en">Political Association</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">Κοινόν</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">Συμμαχία</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Political_Crisis -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Political_Crisis">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Crisis"/>
+        <rdfs:label xml:lang="en">political crisis</rdfs:label>
+        <rdfs:label xml:lang="el">πολιτική κρίση</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Political_Function -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Political_Function">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Proper_Name -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Proper_Name">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Lexical_Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Public_Health_Crisis -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Public_Health_Crisis">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Migration_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Reform -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Reform">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Political_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Religious_Association -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Religious_Association">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Association"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Religious_Festival -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Religious_Festival">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Festivals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Revolt -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Revolt">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Political_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Riot -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Riot">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Political_Crisis"/>
+        <rdfs:label xml:lang="en">riot</rdfs:label>
+        <rdfs:label xml:lang="el">ταραχές</rdfs:label>
+        <rdfs:label xml:lang="el">ταραχή</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Sedition -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Sedition">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Political_Crisis"/>
+        <rdfs:label xml:lang="en">sedition</rdfs:label>
+        <rdfs:label xml:lang="el">στάση</rdfs:label>
+        <skos:altLabel xml:lang="grc">στάσις</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Siege -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Siege">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Military_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Sport_Festival -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Sport_Festival">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Festivals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Term -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Term">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Lexical_Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Trade_Association -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Trade_Association">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Association"/>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#War -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#War">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Military_Crisis"/>
+        <rdfs:label xml:lang="en">war</rdfs:label>
+        <skos:prefLabel xml:lang="en">war</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">πόλεμος</skos:prefLabel>
+        <skos:prefLabel xml:lang="grc">πόλεμος</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#War_declaration -->
+
+    <owl:Class rdf:about="http://o4dh.com/Ontologies/Crisis.owl#War_declaration">
+        <rdfs:subClassOf rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Military_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Alliance_Athens_Argos_462-461_BC -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Alliance_Athens_Argos_462-461_BC">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Political_Association"/>
+        <Perseus_reference xml:lang="en">The Lacedaemonians meanwhile finding the war against the rebels in Ithome likely to last, invoked the aid of their allies, and especially of the Athenians, who came in some force under the command of Cimon. The reason for this pressing summons lay in their reputed skill in siege operations; a long siege had taught the Lacedaemonians their own deficiency in this art, else they would have taken the place by assault. The first open quarrel between the Lacedaemonians and Athenians arose out of this expedition. The Lacedaemonians, when assault failed to take the place, apprehensive of the enterprising and revolutionary character of the Athenians, and further looking upon them as of alien extraction, began to fear that if they remained, they might be tempted by the besieged in Ithome to attempt some political changes. They accordingly dismissed them alone of the allies, without declaring their suspicions, but merely saying that they had now no need of them. But the Athenians, aware that their dismissal did not proceed from the more honorable reason of the two, but from suspicions which had been conceived, went away deeply offended, and conscious of having done nothing to merit such treatment from the Lacedaemonians; and the instant that they returned home they broke off the alliance which had been made against the Mede, and allied themselves with Sparta&apos;s enemy Argos; each of the contracting parties taking the same oaths and making the same alliance with the Thessalians.
+Thucydides. The Peloponnesian War. London, J. M. Dent; New York, E. P. Dutton. 1910.
+http://data.perseus.org/citations/urn:cts:greekLit:tlg0003.tlg001.perseus-eng3:1.102.1-4</Perseus_reference>
+        <Perseus_reference xml:lang="grc">Λακεδαιμόνιοι δέ, ὡς αὐτοῖς πρὸς τοὺς ἐν Ἰθώμῃ ἐμηκύνετο ὁ πόλεμος, ἄλλους τε ἐπεκαλέσαντο ξυμμάχους καὶ Ἀθηναίους: οἱ δ᾽ ἦλθον Κίμωνος στρατηγοῦντος πλήθει οὐκ ὀλίγῳ. μάλιστα δ᾽ αὐτοὺς ἐπεκαλέσαντο ὅτι τειχομαχεῖν ἐδόκουν δυνατοὶ εἶναι, τοῖς δὲ πολιορκίας μακρᾶς καθεστηκυίας τούτου ἐνδεᾶ ἐφαίνετο: βίᾳ γὰρ ἂν εἷλον τὸ χωρίον. καὶ διαφορὰ ἐκ ταύτης τῆς στρατείας πρῶτον Λακεδαιμονίοις καὶ Ἀθηναίοις φανερὰ ἐγένετο. οἱ γὰρ Λακεδαιμόνιοι, ἐπειδὴ τὸ χωρίον βίᾳ οὐχ ἡλίσκετο, δείσαντες τῶν Ἀθηναίων τὸ τολμηρὸν καὶ τὴν νεωτεροποιίαν, καὶ ἀλλοφύλους ἅμα ἡγησάμενοι, μή τι, ἢν παραμείνωσιν, ὑπὸ τῶν ἐν Ἰθώμῃ πεισθέντες νεωτερίσωσι, μόνους τῶν ξυμμάχων ἀπέπεμψαν, τὴν μὲν ὑποψίαν οὐ δηλοῦντες, εἰπόντες δὲ ὅτι οὐδὲν προσδέονται αὐτῶν ἔτι. οἱ δ᾽ Ἀθηναῖοι ἔγνωσαν οὐκ ἐπὶ τῷ βελτίονι λόγῳ ἀποπεμπόμενοι, ἀλλά τινος ὑπόπτου γενομένου, καὶ δεινὸν ποιησάμενοι καὶ οὐκ ἀξιώσαντες ὑπὸ Λακεδαιμονίων τοῦτο παθεῖν, εὐθὺς ἐπειδὴ ἀνεχώρησαν, ἀφέντες τὴν γενομένην ἐπὶ τῷ Μήδῳ ξυμμαχίαν πρὸς αὐτοὺς Ἀργείοις τοῖς ἐκείνων πολεμίοις ξύμμαχοι ἐγένοντο, καὶ πρὸς Θεσσαλοὺς ἅμα ἀμφοτέροις οἱ αὐτοὶ ὅρκοι καὶ ξυμμαχία κατέστη.
+Thucydides. Historiae in two volumes. Oxford, Oxford University Press. 1942.
+http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0003.tlg001.perseus-grc1:1.102.1-4</Perseus_reference>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#Financial_mismanagment_Delian_League -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#Financial_mismanagment_Delian_League">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Financial_Mismanagement"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Cities_allied_to_Athens"/>
+        <location rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#loc-Athens"/>
+        <beginDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-477</beginDate>
+        <endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-476</endDate>
+        <Perseus_reference xml:lang="en">Of all the causes of defection, that connected with arrears of tribute and vessels, and with failure of service, was the chief; for the Athenians were very severe and exacting, and made themselves offensive by applying the screw of necessity to men who were not used to and in fact not disposed for any continuous labour. In some other respects the Athenians were not the old popular rulers they had been at first; and if they had more than their fair share of service, it was correspondingly easy for them to reduce any that tried to leave the confederacy. For this the allies had themselves to blame; the wish to get off service making most of them arrange to pay their share of the expense in money instead of in ships, and so to avoid having to leave their homes. Thus while Athens was increasing her navy with the funds which they contributed, a revolt always found them without resources or experience for war.
+Thucydides. The Peloponnesian War. London, J. M. Dent; New York, E. P. Dutton. 1910.
+http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0003.tlg001.perseus-eng3:1.56</Perseus_reference>
+        <Perseus_reference xml:lang="grc">αἰτίαι δὲ ἄλλαι τε ἦσαν τῶν ἀποστάσεων καὶ μέγισται αἱ τῶν φόρων καὶ νεῶν ἔκδειαι καὶ λιποστράτιον εἴ τῳ ἐγένετο: οἱ γὰρ Ἀθηναῖοι ἀκριβῶς ἔπρασσον καὶ λυπηροὶ ἦσαν οὐκ εἰωθόσιν οὐδὲ βουλομένοις ταλαιπωρεῖν προσάγοντες τὰς ἀνάγκας. ἦσαν δέ πως καὶ ἄλλως οἱ Ἀθηναῖοι οὐκέτι ὁμοίως ἐν ἡδονῇ ἄρχοντες, καὶ οὔτε ξυνεστράτευον ἀπὸ τοῦ ἴσου ῥᾴδιόν τε προσάγεσθαι ἦν αὐτοῖς τοὺς ἀφισταμένους. ὧν αὐτοὶ αἴτιοι ἐγένοντο οἱ ξύμμαχοι: διὰ γὰρ τὴν ἀπόκνησιν ταύτην τῶν στρατειῶν οἱ πλείους αὐτῶν, ἵνα μὴ ἀπ᾽ οἴκου ὦσι, χρήματα ἐτάξαντο ἀντὶ τῶν νεῶν τὸ ἱκνούμενον ἀνάλωμα φέρειν, καὶ τοῖς μὲν Ἀθηναίοις ηὔξετο τὸ ναυτικὸν ἀπὸ τῆς δαπάνης ἣν ἐκεῖνοι ξυμφέροιεν, αὐτοὶ δέ, ὁπότε ἀποσταῖεν, ἀπαράσκευοι καὶ ἄπειροι ἐς τὸν πόλεμον καθίσταντο.
+Thucydides. Historiae in two volumes. Oxford, Oxford University Press. 1942.
+http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0003.tlg001.perseus-grc1:1.99.1-3</Perseus_reference>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-12_lictors -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-12_lictors">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Aemilius_Paulus -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Aemilius_Paulus">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person"/>
+        <rdfs:label xml:lang="en">Aemilius Paulus</rdfs:label>
+        <foaf:name xml:lang="en">Aemilius Paulus</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Agesandridas -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Agesandridas">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person"/>
+        <rdfs:label xml:lang="en">Agesandridas</rdfs:label>
+        <foaf:name xml:lang="en">Agesandridas</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Alcibiades -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Alcibiades">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person"/>
+        <rdfs:comment xml:lang="en">Alcibiades disembarked his army at Gaurium, in the territory of Andros; and when the men of Andros and the Laconians who were there came forth to meet him, the Athenians routed them, shut them up in their city, and killed some few of them.
+http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0206%3Abook%3D1%3Achapter%3D4</rdfs:comment>
+        <rdfs:label xml:lang="en">Alcibiades</rdfs:label>
+        <foaf:name xml:lang="en">Alcibiades</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Alcidas -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Alcidas">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Antiochus_III_the_Great -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Antiochus_III_the_Great">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-22T14:03:17Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Argives -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Argives">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Ethnic_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Athenian_League -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Athenian_League">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Political_Association"/>
+        <rdfs:label xml:lang="en">Athenian League</rdfs:label>
+        <rdfs:label xml:lang="el">Αθηναϊκή Συμμαχία</rdfs:label>
+        <skos:altLabel xml:lang="en">Delian League</skos:altLabel>
+        <skos:altLabel xml:lang="el">Δηλιακή Συμμαχία</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Athenian League</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">Αθηναϊκή Συμμαχία</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Athenians -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Athenians">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Ethnic_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Boeotians -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Boeotians">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Ethnic_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Brasidas -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Brasidas">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Cities_allied_to_Athens -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Cities_allied_to_Athens">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Conon -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Conon">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Corcyreans -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Corcyreans">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Ethnic_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Corcyreans_of_the_democratic_party -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Corcyreans_of_the_democratic_party">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Corinthians -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Corinthians">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Ethnic_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Epidamnians -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Epidamnians">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Ethnic_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Harmodios_and_Aristogeiton -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Harmodios_and_Aristogeiton">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Group"/>
+        <rdfs:label xml:lang="en">Tyrannicides</rdfs:label>
+        <rdfs:label xml:lang="el">Τυραννοκτόνοι</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Hipparchus -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Hipparchus">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person"/>
+        <rdfs:label xml:lang="en">Hipparchos</rdfs:label>
+        <rdfs:label xml:lang="el">Ίππαρχος</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Lesbians -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Lesbians">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Ethnic_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Lyciscus -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Lyciscus">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person"/>
+        <rdfs:label xml:lang="en">Lyciscus</rdfs:label>
+        <foaf:name xml:lang="en">Lyciscus</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Lysander -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Lysander">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person"/>
+        <rdfs:label xml:lang="en">Lysander</rdfs:label>
+        <foaf:name xml:lang="en">Lysander</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Messenians -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Messenians">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Ethnic_Group"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Athenians"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Messenians"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Spartans"/>
+        <location rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#loc-Ithome"/>
+        <location rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#loc-Messenia"/>
+        <beginDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-464</beginDate>
+        <endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-454</endDate>
+        <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Helots</rdfs:seeAlso>
+        <skos:altLabel xml:lang="en">Helots</skos:altLabel>
+        <skos:exactMatch xml:lang="grc">https://www.perseus.tufts.edu/hopper/morph?l=*ei%28%2Flws&amp;la=greek&amp;can=*ei%28%2Flws0#lexicon</skos:exactMatch>
+        <skos:note xml:lang="en">he lowest class of the Spartan state who lived in oppressive, hereditary servitude, and who were for the most part engaged in agriculture. They lived throughout Laconia and also in adjacent Messenia, where the Helot system had been extended by Spartan conquest, and they apparently far outnumbered their masters, who feared as well as exploited them. Source: The Landamark Thucydides. A Comprehensive Guide to the Peloponnesian War.
+https://erenow.net/ancient/the-landmark-thucydides-a-comprehensive-guide-to-the-peloponnesian-war/25.php</skos:note>
+        <skos:note xml:lang="el">Είλωτες</skos:note>
+        <skos:note xml:lang="grc">Εἵλωτες</skos:note>
+        <skos:prefLabel xml:lang="en">Messenians</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Nikostratos -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Nikostratos">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person"/>
+        <rdfs:label xml:lang="en">Nikostratos</rdfs:label>
+        <foaf:name xml:lang="en">Nikostratos</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Parians -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Parians">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Ethnic_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Peisianax -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Peisianax">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person"/>
+        <rdfs:label xml:lang="en">Peisianax</rdfs:label>
+        <foaf:name xml:lang="en">Peisianax</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Peithias -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Peithias">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Peloponnesians -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Peloponnesians">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Ethnic_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Pericles -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Pericles">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Persians -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Persians">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Ethnic_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Potidaeans -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Potidaeans">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Ethnic_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Prytanes -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Prytanes">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Group"/>
+        <rdfs:label xml:lang="en">Prytanes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Roman_army -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Roman_army">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Socrates -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Socrates">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Solon -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Solon">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Sophronicus -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Sophronicus">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person"/>
+        <rdfs:label xml:lang="en">Sophronicus</rdfs:label>
+        <foaf:name xml:lang="en">Sophronicus</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Spartans -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Spartans">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Ethnic_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Thasians -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Thasians">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Ethnic_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Thebans -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Thebans">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Ethnic_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Theramenes -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Theramenes">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person"/>
+        <rdfs:label xml:lang="en">Theramenes</rdfs:label>
+        <foaf:name xml:lang="en">Theramenes</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Thessalians -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Thessalians">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Ethnic_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-Thymochares -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-Thymochares">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person"/>
+        <rdfs:label xml:lang="en">Thymochares</rdfs:label>
+        <foaf:name xml:lang="en">Thymochares</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#agt-pirates -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#agt-pirates">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#earthquake -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#earthquake">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Natural_Agent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#earthquake-Sparta-464_BC -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#earthquake-Sparta-464_BC">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Earthquake"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#earthquake"/>
+        <location rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#loc-Sparta"/>
+        <beginDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-464</beginDate>
+        <endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-464</endDate>
+        <Perseus_reference xml:lang="en">101. Meanwhile the Thasians being defeated in the field and suffering siege, appealed to Lacedaemon, and desired her to assist them by an invasion of Attica. [2] Without informing Athens she promised and intended to do so, but was prevented by the occurrence of the earthquake, accompanied by the secession of the Helots and the Thuriats and Aethaeans of the Perioeci to Ithome. Most of the Helots were the descendants of the old Messenians that were enslaved in the famous war; and so all of them came to be called Messenians. [3] So the Lacedaemonians being engaged in a war with the rebels in Ithome, the Thasians in the third year of the siege obtained terms from the Athenians by razing their walls, delivering up their ships, and arranging to pay the monies demanded at once, and tribute in future; giving up their possessions on the continent together with the mine.
+Thuc. 1.101
+Thucydides. The Peloponnesian War. London, J. M. Dent; New York, E. P. Dutton. 1910.</Perseus_reference>
+        <Perseus_reference xml:lang="grc">101. Θάσιοι δὲ νικηθέντες μάχῃ καὶ πολιορκούμενοι Λακεδαιμονίους ἐπεκαλοῦντο καὶ ἐπαμύνειν ἐκέλευον ἐσβαλόντας ἐς τὴν Ἀττικήν. [2] οἱ δὲ ὑπέσχοντο μὲν κρύφα τῶν Ἀθηναίων καὶ ἔμελλον, διεκωλύθησαν δὲ ὑπὸ τοῦ γενομένου σεισμοῦ, ἐν ᾧ καὶ οἱ Εἵλωτες αὐτοῖς καὶ τῶν περιοίκων Θουριᾶταί τε καὶ Αἰθαιῆς ἐς Ἰθώμην ἀπέστησαν. πλεῖστοι δὲ τῶν Εἱλώτων ἐγένοντο οἱ τῶν παλαιῶν Μεσσηνίων τότε δουλωθέντων ἀπόγονοι: ᾗ καὶ Μεσσήνιοι ἐκλήθησαν οἱ πάντες. [3] πρὸς μὲν οὖν τοὺς ἐν Ἰθώμῃ πόλεμος καθειστήκει Λακεδαιμονίοις, Θάσιοι δὲ τρίτῳ ἔτει πολιορκούμενοι ὡμολόγησαν Ἀθηναίοις τεῖχός τε καθελόντες καὶ ναῦς παραδόντες, χρήματά τε ὅσα ἔδει ἀποδοῦναι αὐτίκα ταξάμενοι καὶ τὸ λοιπὸν φέρειν, τήν τε ἤπειρον καὶ τὸ μέταλλον ἀφέντες.
+Thuc. 1.101
+Thucydides. Historiae in two volumes. Oxford, Oxford University Press. 1942.</Perseus_reference>
+        <rdfs:seeAlso xml:lang="el">https://en.wikipedia.org/wiki/464_BC_Sparta_earthquake</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#evt-Aegospotami_battle -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#evt-Aegospotami_battle">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Battle"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Lysander"/>
+        <location rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#loc-Aegospotami"/>
+        <beginDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-405</beginDate>
+        <endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-405</endDate>
+        <rdfs:label xml:lang="en">Aegospotami battle</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Aegospotami</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#evt-Andros_battle -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#evt-Andros_battle">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Battle"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Alcibiades"/>
+        <location rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#loc-Gavrion"/>
+        <rdfs:label xml:lang="en">Andros battle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#evt-Arginoussai_battle -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#evt-Arginoussai_battle">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Naval_Battle"/>
+        <location rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#loc-Arginusae"/>
+        <rdfs:label xml:lang="en">Arginoussai battle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#evt-Corfu_crisis_Kerkyraika -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#evt-Corfu_crisis_Kerkyraika">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Sedition"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Alcidas"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Peithias"/>
+        <location rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#loc-Corfu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#evt-Peloponnese_war -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#evt-Peloponnese_war">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#War"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Alcibiades"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Lysander"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Pericles"/>
+        <location rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#loc-Peloponnesus"/>
+        <subEvent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#evt-Aegospotami_battle"/>
+        <subEvent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#evt-Andros_battle"/>
+        <subEvent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#evt-Arginoussai_battle"/>
+        <beginDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-431</beginDate>
+        <endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-404</endDate>
+        <rdfs:comment xml:lang="en">[2] But the Argives, Athenians, Boeotians, and1 those among the Corinthians who had received a share of the money from the King, as well as those who had made themselves chiefly responsible for the war, realizing that if they did not put out of the way the people who had turned toward peace, the state would be in danger of going over to the Lacedaemonians again, undertook, under these circumstances, to bring about a general massacre. And in the first place, they devised the most sacrilegious of all schemes; for other people, even if a man is condemned by process of law, do not put him to death during a religious festival; but these men chose the last day of the Euclea,2 because they thought they would catch more people in the market-place, so as to kill them.
+http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0206%3Abook%3D4%3Achapter%3D4%3Asection%3D2</rdfs:comment>
+        <rdfs:comment xml:lang="grc">[4.4.2] Τότε οι Αργείοι, οι Αθηναίοι κι οι Βοιωτοί, καθώς κι όσοι Κορίνθιοι είχαν πληρωθεί από τα χρήματα του Βασιλέως κι όσοι είχαν σταθεί πρωταίτιοι του πολέμου, καταλάβαιναν ότι, αν δεν εξουδετέρωναν την ειρηνόφιλη μερίδα, υπήρχε κίνδυνος να προσχωρήσει η πόλη ξανά στους Λακεδαιμονίους· γι᾽ αυτό οργάνωσαν σφαγή.
+https://www.greek-language.gr/digitalResources/ancient_greek/library/browse.html?text_id=32&amp;page=41&amp;hi=311782</rdfs:comment>
+        <rdfs:label xml:lang="en">Peloponnese war</rdfs:label>
+        <rdfs:seeAlso>http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg001.perseus-grc1:4.4.2</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#evt-Roman_Syrian_war_192-188_BC -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#evt-Roman_Syrian_war_192-188_BC">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#War"/>
+        <location rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#loc-Asia_Minor"/>
+        <location rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#loc-Greece"/>
+        <beginDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-192</beginDate>
+        <endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-188</endDate>
+        <rdfs:comment xml:lang="en">The Seleucid War (192–188 BC), also known as the War of Antiochos or the Syrian War, was a military conflict between two coalitions led by the Roman Republic and the Seleucid Empire. The fighting took place in modern day southern Greece, the Aegean Sea and Asia Minor.
+https://en.wikipedia.org/wiki/Roman–Seleucid_War</rdfs:comment>
+        <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Roman–Seleucid_War</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#evt-conspiracy-Harmodios_and_Aristogeiton_kill_Hipparchos-514_BC -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#evt-conspiracy-Harmodios_and_Aristogeiton_kill_Hipparchos-514_BC">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Conspiracy"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Harmodios_and_Aristogeiton"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Hipparchus"/>
+        <linked_event rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#evt-tyrant-Hipparchus_514_BC"/>
+        <location rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#loc-Athens"/>
+        <beginDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-514</beginDate>
+        <endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-514</endDate>
+        <Perseus_reference xml:lang="en">The general Athenian public fancy that Hipparchus was tyrant when he fell by the hands of Harmodius and Aristogiton; not knowing that Hippias, the eldest of the sons of Pisistratus, was really supreme, and that Hipparchus and Thessalus were his brothers; and that Harmodius and Aristogiton suspecting, on the very day, nay at the very moment fixed on for the deed, that information had been conveyed to Hippias by their accomplices, concluded that he had been warned, and did not attack him, yet, not liking to be apprehended and risk their lives for nothing, fell upon Hipparchus near the temple of the daughters of Leos, and slew him as he was arranging the Panathenaic procession.
+Thuc. 1.20.2
+Thucydides. The Peloponnesian War. London, J. M. Dent; New York, E. P. Dutton. 1910.
+http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0003.tlg001.perseus-eng3:1.20.2</Perseus_reference>
+        <Perseus_reference xml:lang="el">Ἀθηναίων γοῦν τὸ πλῆθος Ἵππαρχον οἴονται ὑφ᾽ Ἁρμοδίου καὶ Ἀριστογείτονος τύραννον ὄντα ἀποθανεῖν, καὶ οὐκ ἴσασιν ὅτι Ἱππίας μὲν πρεσβύτατος ὢν ἦρχε τῶν Πεισιστράτου υἱέων, Ἵππαρχος δὲ καὶ Θεσσαλὸς ἀδελφοὶ ἦσαν αὐτοῦ, ὑποτοπήσαντες δέ τι ἐκείνῃ τῇ ἡμέρᾳ καὶ παραχρῆμα Ἁρμόδιος καὶ Ἀριστογείτων ἐκ τῶν ξυνειδότων σφίσιν Ἱππίᾳ μεμηνῦσθαι τοῦ μὲν ἀπέσχοντο ὡς προειδότος, βουλόμενοι δὲ πρὶν ξυλληφθῆναι δράσαντές τι καὶ κινδυνεῦσαι, τῷ Ἱππάρχῳ περιτυχόντες περὶ τὸ Λεωκόρειον καλούμενον τὴν Παναθηναϊκὴν πομπὴν διακοσμοῦντι ἀπέκτειναν.
+Thuc. 1.20.2
+Thucydides. Historiae in two volumes. Oxford, Oxford University Press. 1942.
+http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0003.tlg001.perseus-grc1:1.20.2</Perseus_reference>
+        <rdfs:label xml:lang="en">killing of Hipparchus by Harmodios and Aristogeiton in 514 BC</rdfs:label>
+        <rdfs:seeAlso>http://data.perseus.org/citations/urn:cts:greekLit:tlg0003.tlg001.perseus-eng3:1.20.2</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#evt-defection_of_Athens_allied_cities -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#evt-defection_of_Athens_allied_cities">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Defection"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Cities_allied_to_Athens"/>
+        <cause rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Financial_mismanagment_Delian_League"/>
+        <location rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#loc-Greece"/>
+        <beginDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-477</beginDate>
+        <endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-476</endDate>
+        <Perseus_reference xml:lang="en">Turning a deaf ear to all these proposals, when their ships were manned and their allies had come in, the Corinthians sent a herald before them to declare war, and getting under weigh with seventy-five ships and two thousand heavy infantry, sailed for Epidamnus to give battle to the Corcyraeans. 
+Thucydides. The Peloponnesian War. London, J. M. Dent; New York, E. P. Dutton. 1910.
+http://data.perseus.org/citations/urn:cts:greekLit:tlg0003.tlg001.perseus-eng3:1.29</Perseus_reference>
+        <Perseus_reference xml:lang="grc">Κορίνθιοι δὲ οὐδὲν τούτων ὑπήκουον, ἀλλ᾽ ἐπειδὴ πλήρεις αὐτοῖς ἦσαν αἱ νῆες καὶ οἱ ξύμμαχοι παρῆσαν, προπέμψαντες κήρυκα πρότερον πόλεμον προεροῦντα Κερκυραίοις, ἄραντες ἑβδομήκοντα ναυσὶ καὶ πέντε δισχιλίοις τε ὁπλίταις ἔπλεον ἐπὶ τὴν Ἐπίδαμνον Κερκυραίοις ἐναντία πολεμήσοντες
+Thucydides. Historiae in two volumes. Oxford, Oxford University Press. 1942.
+http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0003.tlg001.perseus-grc1:1.29</Perseus_reference>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#evt-end-alliance-Spartans-Athenians-462-461_BC -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#evt-end-alliance-Spartans-Athenians-462-461_BC"/>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#evt-end_of_allians_Athenians_Spartans -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#evt-end_of_allians_Athenians_Spartans">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#End_of_Alliance"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Athenians"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Messenians"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Spartans"/>
+        <beginDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-464</beginDate>
+        <endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-463</endDate>
+        <Perseus_reference xml:lang="en">101. Meanwhile the Thasians being defeated in the field and suffering siege, appealed to Lacedaemon, and desired her to assist them by an invasion of Attica. [2] Without informing Athens she promised and intended to do so, but was prevented by the occurrence of the earthquake, accompanied by the secession of the Helots and the Thuriats and Aethaeans of the Perioeci to Ithome. Most of the Helots were the descendants of the old Messenians that were enslaved in the famous war; and so all of them came to be called Messenians. [3] So the Lacedaemonians being engaged in a war with the rebels in Ithome, the Thasians in the third year of the siege obtained terms from the Athenians by razing their walls, delivering up their ships, and arranging to pay the monies demanded at once, and tribute in future; giving up their possessions on the continent together with the mine.
+Thuc. 1.101
+Thucydides. The Peloponnesian War. London, J. M. Dent; New York, E. P. Dutton. 1910. Thuc. 1.101
+https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0200%3Abook%3D1%3Achapter%3D101</Perseus_reference>
+        <Perseus_reference xml:lang="grc">101. Θάσιοι δὲ νικηθέντες μάχῃ καὶ πολιορκούμενοι Λακεδαιμονίους ἐπεκαλοῦντο καὶ ἐπαμύνειν ἐκέλευον ἐσβαλόντας ἐς τὴν Ἀττικήν. [2] οἱ δὲ ὑπέσχοντο μὲν κρύφα τῶν Ἀθηναίων καὶ ἔμελλον, διεκωλύθησαν δὲ ὑπὸ τοῦ γενομένου σεισμοῦ, ἐν ᾧ καὶ οἱ Εἵλωτες αὐτοῖς καὶ τῶν περιοίκων Θουριᾶταί τε καὶ Αἰθαιῆς ἐς Ἰθώμην ἀπέστησαν. πλεῖστοι δὲ τῶν Εἱλώτων ἐγένοντο οἱ τῶν παλαιῶν Μεσσηνίων τότε δουλωθέντων ἀπόγονοι: ᾗ καὶ Μεσσήνιοι ἐκλήθησαν οἱ πάντες. [3] πρὸς μὲν οὖν τοὺς ἐν Ἰθώμῃ πόλεμος καθειστήκει Λακεδαιμονίοις, Θάσιοι δὲ τρίτῳ ἔτει πολιορκούμενοι ὡμολόγησαν Ἀθηναίοις τεῖχός τε καθελόντες καὶ ναῦς παραδόντες, χρήματά τε ὅσα ἔδει ἀποδοῦναι αὐτίκα ταξάμενοι καὶ τὸ λοιπὸν φέρειν, τήν τε ἤπειρον καὶ τὸ μέταλλον ἀφέντες.
+Thuc. 1.101
+Thucydides. Historiae in two volumes. Oxford, Oxford University Press. 1942. Thuc. 1.101
+https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0199%3Abook%3D1%3Achapter%3D101</Perseus_reference>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#evt-insurrection-Corinthians_vs_Epidamians_435_BC -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#evt-insurrection-Corinthians_vs_Epidamians_435_BC">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Insurrection"/>
+        <location rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#loc-Epidamnus"/>
+        <beginDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-435</beginDate>
+        <endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-435</endDate>
+        <Perseus_reference xml:lang="en">http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0003.tlg001.perseus-eng3:1.26.1</Perseus_reference>
+        <Perseus_reference xml:lang="el">http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0003.tlg001.perseus-grc1:1.26.3</Perseus_reference>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#evt-piratical_attack_182_BC -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#evt-piratical_attack_182_BC">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Piratical_attack"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-pirates"/>
+        <location rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#loc-pillars_of_Hercules"/>
+        <beginDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-182</beginDate>
+        <endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-182</endDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#evt-piratical_attacks_182_BC -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#evt-piratical_attacks_182_BC">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#War"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Aemilius_Paulus"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Roman_army"/>
+        <location rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#loc-pillars_of_Hercules"/>
+        <beginDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-182</beginDate>
+        <endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-182</endDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#evt-reform_Solon_594_BC -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#evt-reform_Solon_594_BC">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Reform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#evt-revolt_helots_Ithome_464_BC -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#evt-revolt_helots_Ithome_464_BC">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Revolt"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Messenians"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Spartans"/>
+        <location rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#loc-Ithome"/>
+        <beginDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-464</beginDate>
+        <endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-455</endDate>
+        <Perseus_reference xml:lang="en">101. Meanwhile the Thasians being defeated in the field and suffering siege, appealed to Lacedaemon, and desired her to assist them by an invasion of Attica. [2] Without informing Athens she promised and intended to do so, but was prevented by the occurrence of the earthquake, accompanied by the secession of the Helots and the Thuriats and Aethaeans of the Perioeci to Ithome. Most of the Helots were the descendants of the old Messenians that were enslaved in the famous war; and so all of them came to be called Messenians. [3] So the Lacedaemonians being engaged in a war with the rebels in Ithome, the Thasians in the third year of the siege obtained terms from the Athenians by razing their walls, delivering up their ships, and arranging to pay the monies demanded at once, and tribute in future; giving up their possessions on the continent together with the mine.
+Thuc. 1.101
+Thucydides. The Peloponnesian War. London, J. M. Dent; New York, E. P. Dutton. 1910. Thuc. 1.101
+https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0200%3Abook%3D1%3Achapter%3D101</Perseus_reference>
+        <Perseus_reference xml:lang="grc">101. Θάσιοι δὲ νικηθέντες μάχῃ καὶ πολιορκούμενοι Λακεδαιμονίους ἐπεκαλοῦντο καὶ ἐπαμύνειν ἐκέλευον ἐσβαλόντας ἐς τὴν Ἀττικήν. [2] οἱ δὲ ὑπέσχοντο μὲν κρύφα τῶν Ἀθηναίων καὶ ἔμελλον, διεκωλύθησαν δὲ ὑπὸ τοῦ γενομένου σεισμοῦ, ἐν ᾧ καὶ οἱ Εἵλωτες αὐτοῖς καὶ τῶν περιοίκων Θουριᾶταί τε καὶ Αἰθαιῆς ἐς Ἰθώμην ἀπέστησαν. πλεῖστοι δὲ τῶν Εἱλώτων ἐγένοντο οἱ τῶν παλαιῶν Μεσσηνίων τότε δουλωθέντων ἀπόγονοι: ᾗ καὶ Μεσσήνιοι ἐκλήθησαν οἱ πάντες. [3] πρὸς μὲν οὖν τοὺς ἐν Ἰθώμῃ πόλεμος καθειστήκει Λακεδαιμονίοις, Θάσιοι δὲ τρίτῳ ἔτει πολιορκούμενοι ὡμολόγησαν Ἀθηναίοις τεῖχός τε καθελόντες καὶ ναῦς παραδόντες, χρήματά τε ὅσα ἔδει ἀποδοῦναι αὐτίκα ταξάμενοι καὶ τὸ λοιπὸν φέρειν, τήν τε ἤπειρον καὶ τὸ μέταλλον ἀφέντες.
+Thuc. 1.101
+Thucydides. Historiae in two volumes. Oxford, Oxford University Press. 1942. Thuc. 1.101
+https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0199%3Abook%3D1%3Achapter%3D101</Perseus_reference>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#evt-siege-Ithome_464_BC -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#evt-siege-Ithome_464_BC">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Siege"/>
+        <Perseus_reference xml:lang="en">101. Meanwhile the Thasians being defeated in the field and suffering siege, appealed to Lacedaemon, and desired her to assist them by an invasion of Attica. [2] Without informing Athens she promised and intended to do so, but was prevented by the occurrence of the earthquake, accompanied by the secession of the Helots and the Thuriats and Aethaeans of the Perioeci to Ithome. Most of the Helots were the descendants of the old Messenians that were enslaved in the famous war; and so all of them came to be called Messenians. [3] So the Lacedaemonians being engaged in a war with the rebels in Ithome, the Thasians in the third year of the siege obtained terms from the Athenians by razing their walls, delivering up their ships, and arranging to pay the monies demanded at once, and tribute in future; giving up their possessions on the continent together with the mine.
+Thuc. 1.101
+Thucydides. The Peloponnesian War. London, J. M. Dent; New York, E. P. Dutton. 1910. Thuc. 1.101</Perseus_reference>
+        <Perseus_reference xml:lang="grc">101. Θάσιοι δὲ νικηθέντες μάχῃ καὶ πολιορκούμενοι Λακεδαιμονίους ἐπεκαλοῦντο καὶ ἐπαμύνειν ἐκέλευον ἐσβαλόντας ἐς τὴν Ἀττικήν. [2] οἱ δὲ ὑπέσχοντο μὲν κρύφα τῶν Ἀθηναίων καὶ ἔμελλον, διεκωλύθησαν δὲ ὑπὸ τοῦ γενομένου σεισμοῦ, ἐν ᾧ καὶ οἱ Εἵλωτες αὐτοῖς καὶ τῶν περιοίκων Θουριᾶταί τε καὶ Αἰθαιῆς ἐς Ἰθώμην ἀπέστησαν. πλεῖστοι δὲ τῶν Εἱλώτων ἐγένοντο οἱ τῶν παλαιῶν Μεσσηνίων τότε δουλωθέντων ἀπόγονοι: ᾗ καὶ Μεσσήνιοι ἐκλήθησαν οἱ πάντες. [3] πρὸς μὲν οὖν τοὺς ἐν Ἰθώμῃ πόλεμος καθειστήκει Λακεδαιμονίοις, Θάσιοι δὲ τρίτῳ ἔτει πολιορκούμενοι ὡμολόγησαν Ἀθηναίοις τεῖχός τε καθελόντες καὶ ναῦς παραδόντες, χρήματά τε ὅσα ἔδει ἀποδοῦναι αὐτίκα ταξάμενοι καὶ τὸ λοιπὸν φέρειν, τήν τε ἤπειρον καὶ τὸ μέταλλον ἀφέντες.
+Thuc. 1.101
+Thucydides. Historiae in two volumes. Oxford, Oxford University Press. 1942. Thuc. 1.101
+https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0199%3Abook%3D1%3Achapter%3D101</Perseus_reference>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#evt-third_Messenian_war_464_BC -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#evt-third_Messenian_war_464_BC">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#War"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Messenians"/>
+        <location rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#loc-Ithome"/>
+        <location rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#loc-Messenia"/>
+        <beginDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-464</beginDate>
+        <endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-459</endDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#evt-tyrant-Hipparchus_514_BC -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#evt-tyrant-Hipparchus_514_BC">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Performed_Function"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Hipparchus"/>
+        <location rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#loc-Athens"/>
+        <beginDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-514</beginDate>
+        <endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-514</endDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#evt-war_Athens_Corinth_435_BC -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#evt-war_Athens_Corinth_435_BC">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#War"/>
+        <location rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#loc-Pallene"/>
+        <beginDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-435</beginDate>
+        <endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-435</endDate>
+        <Perseus_reference xml:lang="el">http://data.perseus.org/citations/urn:cts:greekLit:tlg0003.tlg001.perseus-grc1:1.56</Perseus_reference>
+        <Perseus_reference xml:lang="en">http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0003.tlg001.perseus-eng3:1.56</Perseus_reference>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#evt-war_declaration_Corcyra_Epidamnus_Corinth -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#evt-war_declaration_Corcyra_Epidamnus_Corinth">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#War_declaration"/>
+        <beginDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-435</beginDate>
+        <endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-435</endDate>
+        <Perseus_reference xml:lang="en">http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0003.tlg001.perseus-eng3:1.29</Perseus_reference>
+        <Perseus_reference xml:lang="el">http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0003.tlg001.perseus-grc1:1.29</Perseus_reference>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#evt-war_declaration_between_Corcyreans_and_Epidamnians_435_BC -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#evt-war_declaration_between_Corcyreans_and_Epidamnians_435_BC">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#War_declaration"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#evt-war_in_the_West_in_191_BC -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#evt-war_in_the_West_in_191_BC">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#War"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-12_lictors"/>
+        <agent rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Aemilius_Paulus"/>
+        <location rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#loc-Spain"/>
+        <beginDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-191</beginDate>
+        <endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-191</endDate>
+        <reference xml:lang="en">After the Romans had gone to war with Antiochus the Great, and while their most experienced commanders were employed against him, another war arose in the West, and there were great commotions in Spain. For this war Aemilius was sent out as praetor, not with the six lictors which praetors usually have, but adding other six to that number, so that his office had a consular dignity.
+Plut. Aem. 4.1 Plutarch. Plutarch&apos;s Lives. with an English Translation by. Bernadotte Perrin. Cambridge, MA. Harvard University Press. London. William Heinemann Ltd. 1918.
+http://data.perseus.org/citations/urn:cts:greekLit:tlg0007.tlg019.perseus-eng1:4.2</reference>
+        <reference xml:lang="en">συστάντος δὲ τοῦ πρὸς Ἀντίοχον τὸν μέγαν πολέμου τοῖς Ῥωμαίοις, καὶ τῶν ἡγεμονικωτάτων ἀνδρῶν τετραμμένων πρὸς ἐκεῖνον, ἄλλος ἀπὸ τῆς ἑσπέρας ἀνέστη πόλεμος, ἐν Ἰβηρίᾳ, κινημάτων μεγάλων γενομένων, ἐπὶ τοῦτον ὁ Αἰμίλιος ἐξεπέμφθη στρατηγός, οὐχ ἓξ ἔχων πελέκεις, ὅσους ἔχουσιν οἱ στρατηγοῦντες, ἀλλὰ προσλαβὼν ἑτέρους τοσούτους, ὥστε τῆς ἀρχῆς ὑπατικὸν γενέσθαι τὸ ἀξίωμα,
+Plut. Aem. 4.1 Plutarch. Plutarch&apos;s Lives. with an English Translation by. Bernadotte Perrin. Cambridge, MA. Harvard University Press. London. William Heinemann Ltd. 1918.
+http://data.perseus.org/citations/urn:cts:greekLit:tlg0007.tlg019.perseus-grc1:4.1</reference>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#fct-tyrant -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#fct-tyrant">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Political_Function"/>
+        <rdfs:label xml:lang="el">τύραννος</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#league-cities_allied_to_Athens -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#league-cities_allied_to_Athens">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Political_Association"/>
+        <rdfs:label xml:lang="en">Cities members of the Athenian League</rdfs:label>
+        <skos:altLabel xml:lang="en">Cities members of the Delian League</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Cities members of the Athenian League</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#league-cities_allied_to_Corinth -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#league-cities_allied_to_Corinth">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Political_Association"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#league-cities_allied_to_Sparta -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#league-cities_allied_to_Sparta">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Political_Association"/>
+        <rdfs:label xml:lang="en">Peloponnesian League</rdfs:label>
+        <rdfs:label xml:lang="en">Πελοποννησιακή Συμμαχία</rdfs:label>
+        <skos:note xml:lang="en">Peloponnesian League alliance between Sparta, Corinth, Elis and Tegea which establishes Spartan hegemony over the Peloponnese between circa 550 and 366 BC.</skos:note>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#loc-Aegospotami -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#loc-Aegospotami">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Location"/>
+        <rdfs:label xml:lang="en">Aegospotami</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#loc-Arginusae -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#loc-Arginusae">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Location"/>
+        <pleiadesCoordinates>https://en.wikipedia.org/wiki/Battle_of_Arginusae</pleiadesCoordinates>
+        <rdfs:label xml:lang="en">Arginusae</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#loc-Asia_Minor -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#loc-Asia_Minor">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#loc-Athens -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#loc-Athens">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#loc-Corfu -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#loc-Corfu">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Location"/>
+        <rdfs:seeAlso xml:lang="el">http://vocab.getty.edu/tgn/7010883</rdfs:seeAlso>
+        <rdfs:seeAlso>https://topostext.org/place/396199PKer</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#loc-Epidamnus -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#loc-Epidamnus">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Location"/>
+        <rdfs:seeAlso xml:lang="la">http://vocab.getty.edu/tgn/8712007</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="la">https://el.wikipedia.org/wiki/%CE%95%CF%80%CE%AF%CE%B4%CE%B1%CE%BC%CE%BD%CE%BF%CF%82</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="la">https://topostext.org/place/413194PEpi</rdfs:seeAlso>
+        <skos:altLabel xml:lang="en">Durres (Albania)</skos:altLabel>
+        <skos:altLabel xml:lang="en">Epidmanos</skos:altLabel>
+        <skos:altLabel xml:lang="el">Επίδαμνος</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#loc-Gavrion -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#loc-Gavrion">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Location"/>
+        <rdfs:label xml:lang="en">Gavrion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#loc-Greece -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#loc-Greece">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#loc-Ithome -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#loc-Ithome">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#loc-Messenia -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#loc-Messenia">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#loc-Pallene -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#loc-Pallene">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Location"/>
+        <pleiadesCoordinates>39.9832624, 23.6437183</pleiadesCoordinates>
+        <pleiadesCoordinates rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://pleiades.stoa.org/places/491682</pleiadesCoordinates>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#loc-Peloponnesus -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#loc-Peloponnesus">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Location"/>
+        <pleiadesCoordinates>https://pleiades.stoa.org/places/570577</pleiadesCoordinates>
+        <rdfs:label xml:lang="en">Peloponnesus</rdfs:label>
+        <rdfs:label xml:lang="fr">Péloponnèse</rdfs:label>
+        <rdfs:label xml:lang="el">Πελοπόννησος</rdfs:label>
+        <rdfs:seeAlso>http://vocab.getty.edu/page/tgn/7226273</rdfs:seeAlso>
+        <rdfs:seeAlso>https://pleiades.stoa.org/places/570577</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#loc-Spain -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#loc-Spain">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#loc-Sparta -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#loc-Sparta">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Location"/>
+        <rdfs:label xml:lang="en">Laconia</rdfs:label>
+        <rdfs:seeAlso>37.077905, 22.4272985</rdfs:seeAlso>
+        <rdfs:seeAlso>https://pleiades.stoa.org/places/570685</rdfs:seeAlso>
+        <skos:altLabel xml:lang="en">Laconia</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Sparta</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">Λακωνία</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">Σπάρτη</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#loc-pillars_of_Hercules -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#loc-pillars_of_Hercules">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Location"/>
+        <rdfs:label xml:lang="en">Gibraltar</rdfs:label>
+        <rdfs:label xml:lang="en">Pillars of Hercules</rdfs:label>
+        <rdfs:seeAlso>36.000038, -5.37113526667</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="la">http://vocab.getty.edu/tgn/1041929</rdfs:seeAlso>
+        <rdfs:seeAlso>https://pleiades.stoa.org/places/275614</rdfs:seeAlso>
+        <skos:altLabel xml:lang="la">Columnae Herculis</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#pn-Brasidas-en -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#pn-Brasidas-en">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Proper_Name"/>
+        <designation rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Brasidas"/>
+        <language>en</language>
+        <rdfs:label xml:lang="en">Brasidas</rdfs:label>
+        <foaf:name xml:lang="en">Brasidas</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#pn-Socrates-en -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#pn-Socrates-en">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Proper_Name"/>
+        <designation rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Socrates"/>
+        <language>en</language>
+        <rdfs:label xml:lang="en">Socrates</rdfs:label>
+        <foaf:name xml:lang="en">Socrates</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#pn-Socrates-fr -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#pn-Socrates-fr">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Proper_Name"/>
+        <designation rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#agt-Socrates"/>
+        <language>fr</language>
+        <rdfs:label xml:lang="fr">Socrates</rdfs:label>
+        <foaf:name xml:lang="fr">Socrates</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://o4dh.com/Ontologies/Crisis.owl#term-sedition-en -->
+
+    <owl:NamedIndividual rdf:about="http://o4dh.com/Ontologies/Crisis.owl#term-sedition-en">
+        <rdf:type rdf:resource="http://o4dh.com/Ontologies/Crisis.owl#Term"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Group"/>
+            <rdf:Description rdf:about="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Natural_Agent"/>
+            <rdf:Description rdf:about="http://o4dh.com/Ontologies/Crisis.owl#LACRIMALit_Person"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
